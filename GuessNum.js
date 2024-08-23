@@ -57,7 +57,7 @@
                 });
             }
             heartsReset();
-            guessInput.value = '';
+            
             timeLeftDisplay.textContent = `Qolgan vaqt: ${timeLeft} soniya!`
     
             timerInterval = setInterval(() => {
@@ -105,6 +105,8 @@
                     message.textContent = `Kichik qiymat kiritdingiz. Sizda ${attempts} ta imkoniyat qoldi.`;
                 }
             }
+            guessInput.value = " ";
+            guessInput.focus();
         }
 
         function stopGame(didWin) {
