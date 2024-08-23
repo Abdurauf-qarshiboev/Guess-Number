@@ -32,8 +32,8 @@
         guessButton.addEventListener('click', makeGuess);
 
         function startGame() {
-            // randomNum = Math.round(Math.random() * 100) + 1;
-            randomNum = 50;
+            randomNum = Math.round(Math.random() * 100) + 1;
+            // randomNum = 50;
             attempts = 5;
             timeLeft = 30;
 
