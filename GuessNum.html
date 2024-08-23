@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'ylagan Sonni Topish</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            screens: {
+                'sm': {'max': '425px'},
+                // => @media (max-width: 425px) { ... }
+            },
+            extend: {
+                colors: {
+                    'notimetext': '#f00e2c',
+                    'timeCountdowntext': '#41B3A2',
+                }
+            }
+        }
+    }
+    </script>
+    <style>
+        body{
+            background-image: url('./img/36154140_8389461.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-sky-400 font-mono w-full h-screen grid place-items-center">
+
+    <article class="flex flex-col items-center justify-center backdrop-blur-[5px] p-10 w-full h-full">
+
+        <!-- title -->
+        <div class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 mb-5 sm:text-center sm:text-2xl">O'ylagan Sonni Topish</div>
+
+        <!-- hearts -->
+        <div class="flex items-center justify-start mb-7" id="hearts">
+            <svg class="size-10 block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  fill="none"><style>@keyframes pulsate{0%,to{transform:scale(1)}50%{transform:scale(.9)}}</style><g style="animation:pulsate .5s ease-in-out infinite both;transform-origin:center center" stroke-width="1.5"><path stroke="#f00e2c" d="M11.515 6.269l.134.132a.5.5 0 00.702 0l.133-.132A4.44 4.44 0 0115.599 5c.578 0 1.15.112 1.684.33a4.41 4.41 0 011.429.939c.408.402.733.88.954 1.406a4.274 4.274 0 010 3.316 4.331 4.331 0 01-.954 1.405l-6.36 6.259a.5.5 0 01-.702 0l-6.36-6.259A4.298 4.298 0 014 9.333c0-1.15.464-2.252 1.29-3.064A4.439 4.439 0 018.401 5c1.168 0 2.288.456 3.114 1.269z"/><path stroke="#f00e2c" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5c.802.304 1.862 1.43 2 2"/></g></svg>
+            <svg class="size-10 block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  fill="none"><style>@keyframes pulsate{0%,to{transform:scale(1)}50%{transform:scale(.9)}}</style><g style="animation:pulsate .5s ease-in-out infinite both;transform-origin:center center" stroke-width="1.5"><path stroke="#f00e2c" d="M11.515 6.269l.134.132a.5.5 0 00.702 0l.133-.132A4.44 4.44 0 0115.599 5c.578 0 1.15.112 1.684.33a4.41 4.41 0 011.429.939c.408.402.733.88.954 1.406a4.274 4.274 0 010 3.316 4.331 4.331 0 01-.954 1.405l-6.36 6.259a.5.5 0 01-.702 0l-6.36-6.259A4.298 4.298 0 014 9.333c0-1.15.464-2.252 1.29-3.064A4.439 4.439 0 018.401 5c1.168 0 2.288.456 3.114 1.269z"/><path stroke="#f00e2c" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5c.802.304 1.862 1.43 2 2"/></g></svg>
+            <svg class="size-10 block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  fill="none"><style>@keyframes pulsate{0%,to{transform:scale(1)}50%{transform:scale(.9)}}</style><g style="animation:pulsate .5s ease-in-out infinite both;transform-origin:center center" stroke-width="1.5"><path stroke="#f00e2c" d="M11.515 6.269l.134.132a.5.5 0 00.702 0l.133-.132A4.44 4.44 0 0115.599 5c.578 0 1.15.112 1.684.33a4.41 4.41 0 011.429.939c.408.402.733.88.954 1.406a4.274 4.274 0 010 3.316 4.331 4.331 0 01-.954 1.405l-6.36 6.259a.5.5 0 01-.702 0l-6.36-6.259A4.298 4.298 0 014 9.333c0-1.15.464-2.252 1.29-3.064A4.439 4.439 0 018.401 5c1.168 0 2.288.456 3.114 1.269z"/><path stroke="#f00e2c" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5c.802.304 1.862 1.43 2 2"/></g></svg>
+            <svg class="size-10 block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  fill="none"><style>@keyframes pulsate{0%,to{transform:scale(1)}50%{transform:scale(.9)}}</style><g style="animation:pulsate .5s ease-in-out infinite both;transform-origin:center center" stroke-width="1.5"><path stroke="#f00e2c" d="M11.515 6.269l.134.132a.5.5 0 00.702 0l.133-.132A4.44 4.44 0 0115.599 5c.578 0 1.15.112 1.684.33a4.41 4.41 0 011.429.939c.408.402.733.88.954 1.406a4.274 4.274 0 010 3.316 4.331 4.331 0 01-.954 1.405l-6.36 6.259a.5.5 0 01-.702 0l-6.36-6.259A4.298 4.298 0 014 9.333c0-1.15.464-2.252 1.29-3.064A4.439 4.439 0 018.401 5c1.168 0 2.288.456 3.114 1.269z"/><path stroke="#f00e2c" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5c.802.304 1.862 1.43 2 2"/></g></svg>
+            <svg class="size-10 block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  fill="none"><style>@keyframes pulsate{0%,to{transform:scale(1)}50%{transform:scale(.9)}}</style><g style="animation:pulsate .5s ease-in-out infinite both;transform-origin:center center" stroke-width="1.5"><path stroke="#f00e2c" d="M11.515 6.269l.134.132a.5.5 0 00.702 0l.133-.132A4.44 4.44 0 0115.599 5c.578 0 1.15.112 1.684.33a4.41 4.41 0 011.429.939c.408.402.733.88.954 1.406a4.274 4.274 0 010 3.316 4.331 4.331 0 01-.954 1.405l-6.36 6.259a.5.5 0 01-.702 0l-6.36-6.259A4.298 4.298 0 014 9.333c0-1.15.464-2.252 1.29-3.064A4.439 4.439 0 018.401 5c1.168 0 2.288.456 3.114 1.269z"/><path stroke="#f00e2c" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5c.802.304 1.862 1.43 2 2"/></g></svg>
+        </div>
+
+        <!-- start/restart button-->
+        <button class="border-0 outline-0 text-xl rounded-2xl py-2 px-4 mt-5 ring-inset ring-1 ring-sky-400/50 hover:scale-110 transition duration-200 ease-in-out bg-clip-text text-transparent bg-gradient-to-r to-pink-500 from-violet-500" id="startButton">Start</button>
+
+        <!-- user guess and guess button -->
+        <div class="flex items-center gap-5 mb-5 sm:flex-col">
+            <input class="bg-sky-400/30 border-0 outline-0 text-base text-sky-200 rounded-xl p-2 ring-0 ring-1 ring-inset ring-sky-400/50 placeholder:text-sky-400 placeholder:italic" id="guessInput" placeholder="Son kiriting" style="display:none;">
+
+            <button class="border-0 outline-0 text-base rounded-lg py-1 px-4 bg-sky-400/20 ring-inset ring-1 ring-sky-400/50 hover:bg-sky-400/30" id="guessButton" style="display:none;">Taxmin qilish</button>
+        </div>
+
+        <!--display time left -->
+        <div id="timeLeftDisplayDIV" class="flex items-center gap-3 mb-2">
+            <svg id="clockSVG" class="size-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><style>@keyframes rotate{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style><rect width="16" height="16" x="4" y="4" stroke="#2c97c6" stroke-width="1.5" rx="8"/><path stroke="#ffffff" stroke-linecap="round" stroke-width="1.5" d="M12.021 12l2.325 2.325"/><path stroke="#2c97c6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.021 12V6.84" style="animation:rotate 2s linear infinite both;transform-origin:center"/></svg>
+            <svg id="notimeSVG" class="size-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><style>@keyframes n-info-2{0%,to{transform:rotate(0deg);transform-origin:top center}10%,90%{transform:rotate(2deg)}20%,40%,60%{transform:rotate(-6deg)}30%,50%,70%{transform:rotate(6deg)}80%{transform:rotate(-2deg)}}</style><path stroke="#2c97c6" stroke-width="1.5" d="M12 3.398a5 5 0 00-5 5v2c0 .758-.442 1.505-1.005 2.012A3 3 0 008 17.642h8a3 3 0 002.005-5.232C17.442 11.903 17 11.156 17 10.398v-2a5 5 0 00-5-5z"/><g style="animation:n-info-2 1.5s cubic-bezier(.455,.03,.515,.955) both infinite"><path stroke="#2c97c6" stroke-linecap="round" stroke-width="1.5" d="M14.39 20.312l-.043.01a9.715 9.715 0 01-4.67-.01"/><path stroke="#f00e2c" stroke-linecap="round" stroke-width="1.5" d="M12 7.923v3.206"/><circle cx="12" cy="13.245" r=".832" fill="#f00e2c"/></g></svg>
+
+            <!-- time left text -->
+            <p id="timeLeft" class="text-timeCountdowntext">
+            </p>
+        </div>
+
+        <!-- result -->
+        <div class="flex items-center">
+            <svg id="failureSVG" class="size-[50px] mr-3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><style>@keyframes n-info-cir{0%,to{transform:rotate(0deg);transform-origin:center}10%,90%{transform:rotate(2deg)}20%,40%,60%{transform:rotate(-6deg)}30%,50%,70%{transform:rotate(6deg)}80%{transform:rotate(-2deg)}}</style><g style="animation:n-info-cir .8s cubic-bezier(.455,.03,.515,.955) both infinite"><circle cx="12.29" cy="12" r="8" stroke="#2c97c6" stroke-width="1.5"/><path stroke="#f00e2c" stroke-linecap="round" stroke-width="1.5" d="M12.29 8.143v4.55"/><circle cx="12.29" cy="14.957" r=".9" fill="#f00e2c"/></g></svg>
+
+            <!-- win -->
+            <svg id="successSVG" class="size-[70px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #FFD700 ;"><path d="M12 22c3.859 0 7-3.141 7-7s-3.141-7-7-7c-3.86 0-7 3.141-7 7s3.14 7 7 7zm0-12c2.757 0 5 2.243 5 5s-2.243 5-5 5-5-2.243-5-5 2.243-5 5-5zm-1-8H7v5.518a8.957 8.957 0 0 1 4-1.459V2zm6 0h-4v4.059a8.957 8.957 0 0 1 4 1.459V2z"></path><path d="m10.019 15.811-.468 2.726L12 17.25l2.449 1.287-.468-2.726 1.982-1.932-2.738-.398L12 11l-1.225 2.481-2.738.398z"></path></svg>
+            
+            <!-- result text -->
+            <p id="message" class="sm:max-w-[270px] sm:max-w-[215px] text-center"></p>
+        </div>
+
+    </article>
+
+    
+    <script src="./GuessNum.js"></script>
+</body>
+</html>
