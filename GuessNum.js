@@ -31,6 +31,11 @@
         startButton.addEventListener('click', startGame);
         guessButton.addEventListener('click', makeGuess);
 
+        guessInput.addEventListener("keydown", (event) => {
+            if (event.key == "Enter") {
+            guessButton.click();
+            }
+        });
         function startGame() {
             randomNum = Math.round(Math.random() * 100) + 1;
             // randomNum = 50;
@@ -45,8 +50,7 @@
             hearts.classList.replace("hidden", "flex");
             clock.classList.replace("hidden", "block");
             message.textContent = "O'yin boshlandi! Sizda 5 ta imkoniyat bor.";
-            message.classList.add("sm:text-center");
-            message.classList.remove("sm:max-w-[270px]");
+            message.classList.replace("max-w-[215px]" ,"sm:max-w-[270px]");
             guessInput.style.display = 'block';
             guessButton.style.display = 'block';
             startButton.style.display = 'none';
@@ -105,7 +109,7 @@
                     message.textContent = `Kichik qiymat kiritdingiz. Sizda ${attempts} ta imkoniyat qoldi.`;
                 }
             }
-            guessInput.value = " ";
+            guessInput.value = "";
             guessInput.focus();
         }
 
@@ -123,7 +127,7 @@
                 hearts.classList.add("hidden");
             } else {
                 message.textContent = `Topolmadiz. O'ylagan sonimiz ${randomNum} edi.`;
-                message.classList.remove("sm:text-center");
+                message.classList.replace("sm:max-w-[270px]", "sm:max-w-[215px]");
                 failure.classList.replace("hidden", "block")
                 hearts.classList.add("hidden");
             }

@@ -32,7 +32,7 @@
 </head>
 <body class="bg-slate-900 text-sky-400 font-mono w-full h-screen">
 
-    <article class="flex flex-col items-center justify-center backdrop-blur-[5px] p-10 w-full h-full">
+    <article class="flex flex-col items-center justify-center backdrop-blur-[5px] p-10 w-full h-full sm:p-4">
 
         <!-- title -->
         <div class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 mb-5 sm:text-center sm:text-2xl">O'ylagan Sonni Topish</div>
@@ -68,13 +68,13 @@
 
         <!-- result -->
         <div class="flex items-center">
-            <svg id="failureSVG" class="size-[50px] mr-3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><style>@keyframes n-info-cir{0%,to{transform:rotate(0deg);transform-origin:center}10%,90%{transform:rotate(2deg)}20%,40%,60%{transform:rotate(-6deg)}30%,50%,70%{transform:rotate(6deg)}80%{transform:rotate(-2deg)}}</style><g style="animation:n-info-cir .8s cubic-bezier(.455,.03,.515,.955) both infinite"><circle cx="12.29" cy="12" r="8" stroke="#2c97c6" stroke-width="1.5"/><path stroke="#f00e2c" stroke-linecap="round" stroke-width="1.5" d="M12.29 8.143v4.55"/><circle cx="12.29" cy="14.957" r=".9" fill="#f00e2c"/></g></svg>
+            <svg id="failureSVG" class="size-[50px] mr-3 sm:mr-0 sm:size-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><style>@keyframes n-info-cir{0%,to{transform:rotate(0deg);transform-origin:center}10%,90%{transform:rotate(2deg)}20%,40%,60%{transform:rotate(-6deg)}30%,50%,70%{transform:rotate(6deg)}80%{transform:rotate(-2deg)}}</style><g style="animation:n-info-cir .8s cubic-bezier(.455,.03,.515,.955) both infinite"><circle cx="12.29" cy="12" r="8" stroke="#2c97c6" stroke-width="1.5"/><path stroke="#f00e2c" stroke-linecap="round" stroke-width="1.5" d="M12.29 8.143v4.55"/><circle cx="12.29" cy="14.957" r=".9" fill="#f00e2c"/></g></svg>
 
             <!-- win -->
             <svg id="successSVG" class="size-[70px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #FFD700 ;"><path d="M12 22c3.859 0 7-3.141 7-7s-3.141-7-7-7c-3.86 0-7 3.141-7 7s3.14 7 7 7zm0-12c2.757 0 5 2.243 5 5s-2.243 5-5 5-5-2.243-5-5 2.243-5 5-5zm-1-8H7v5.518a8.957 8.957 0 0 1 4-1.459V2zm6 0h-4v4.059a8.957 8.957 0 0 1 4 1.459V2z"></path><path d="m10.019 15.811-.468 2.726L12 17.25l2.449 1.287-.468-2.726 1.982-1.932-2.738-.398L12 11l-1.225 2.481-2.738.398z"></path></svg>
             
             <!-- result text -->
-            <p id="message" class="sm:max-w-[270px] sm:max-w-[215px] text-center"></p>
+            <p id="message" class="sm:max-w-[270px] text-center"></p>
         </div>
 
     </article>
